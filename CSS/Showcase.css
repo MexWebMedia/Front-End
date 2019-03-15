@@ -1,0 +1,861 @@
+div#pagina {
+	overflow: hidden;
+	width: 100%;
+	min-width: 350px;
+	margin: auto;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1; 
+
+}
+ 
+::-webkit-scrollbar-thumb{
+    background: #333333;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555; 
+}
+
+
+::-moz-scrollbar {
+    width: 10px;
+}
+
+::-moz-scrollbar-track {
+    background: #f1f1f1; 
+
+}
+ 
+::-moz-scrollbar-thumb {
+    background: #333333;
+    border-radius: 10px;
+}
+
+::-moz-scrollbar-thumb:hover, {
+    background: #555; 
+}
+
+header, section#Gibson, section#Fender, section#PRS, section#Ibanez, section#Retailers {
+	padding: 0px 100px;
+}
+
+html, body {
+        overflow-x: hidden;
+    }
+
+/* Nav Starts Here */
+
+header {
+	height: 100vh;
+    min-height: 500px;
+	background-image: url("../img/ShowcaseBackground.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+    display: flex !important;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav a {
+    padding: 8px 25px;
+    transition: ease-in-out 0.3s;
+    border: 1px solid white;
+    background: #333333;
+}
+
+nav a:hover{
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid;
+    color: #333333;
+    transition: ease-in-out 0.3s;
+}
+
+.menu-icon {
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+h1 {
+	text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+#Title {
+	position: relative;
+    text-align: center;
+    align-self: center;
+}
+
+#Page_Title {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+#gibsonButton, #fenderButton, #PRSButton, #ibanezButton {
+    text-align: center;
+    position: relative;
+    grid-row: 3;
+    top: 150px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    margin: 40px;
+}
+
+.learn{
+    background-color: #ffffff;
+    font-size: 1em;
+    font-family: "Open Sans";
+    font-weight: lighter;
+    border-radius: 20px;
+    border: solid 1px #333333 !important;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    color: #333333;
+    text-decoration: none;
+}
+
+#PRSButton .learn {
+    padding: 12px 32px !important;
+}
+
+.learn:hover{
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid !important;
+    border-color: #ffffff;
+    transition: ease-in-out 0.3s;
+}
+
+.learn a {
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Open Sans;
+    font-weight: lighter;
+    color: #333333;
+}
+
+.learn a:hover {
+    color: white;
+}
+
+ul li:nth-child(3) a {
+    background: white;
+    color: #333333;
+}
+
+#buttonWrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#buttonWrapper div, #Title div{
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.visible {
+    opacity: 1 !important;
+    transform: translateX(0px) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Guitar Rows / Content */
+
+#Gibson_Row .guitar_model, #Fender_Row .guitar_model, #PRS_Row .guitar_model, #Ibanez_Row .guitar_model{
+    transform: translateY(-300px);
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.visible {
+    opacity: 1 !important;
+    transform: translateX(0px) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+section#Gibson {
+	height: 100vh;
+    min-height: 830px;
+	background-color: #ebebeb;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section#Fender {
+	height: 90vh;
+    min-height: 751px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section#PRS {
+    height: 91vh;
+    min-height: 760px;
+    background-color: #ebebeb;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section#Ibanez {
+	height: 85vh;
+    min-height: 712px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section#Retailers {
+	height: 300px;
+	background-color: #ebebeb;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Main_Logo {
+	position: relative;
+    text-align: center;
+}
+
+.Series_Title {
+	position: relative;
+	text-align: center;
+}
+
+#Retailers_Title {
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+#Gibson_Row, #Fender_Row, #PRS_Row, #Ibanez_Row {
+	position: relative;
+    text-align: center;
+}
+
+.guitar_model{
+	position: relative;
+    display: inline-block;
+    height: 23.64em;
+    width: 14vw;
+    min-width: 235px;
+    background-color: white;
+    border: 1px solid;
+    border-color: #333333;
+    box-shadow: 5px 10px 45px #888888;
+    margin-bottom: 4px;
+}
+
+.overlay {
+          position: absolute;
+          bottom: 4%;
+          left: 4%;
+          right: 4%;
+          background-color: rgba(0, 0, 0, 0.6);
+          overflow: hidden;
+          width: 92%;
+          height: 92%;
+          -webkit-transform:scale(0);
+          transition: .3s ease;
+        }
+
+        .guitar_model:hover .overlay{
+          transform: scale(1)
+        }
+
+        .text_overlay {
+          color: grey;
+          font-size: 20px;
+          position: absolute;
+          top: 80%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center;
+        }
+
+        .text_overlay>a {
+            text-decoration: none;
+            font-size: 35px;
+            font-family: Roboto Condensed;
+            font-weight: 300;
+            border: 2px solid white;
+            padding: 5px 40px;
+        }
+
+.product {
+	image-rendering: crisp-edges;
+	height: 370px;
+	text-align: center;
+	vertical-align: center;
+}
+
+#return_to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+}
+#return_to_top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 14px;
+    top: 10px;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+#return_to_top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return_to_top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #2d2929;
+}
+
+section#Footer {
+    height: 31vh;
+    min-height: 301px;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+#Sponsors_Text {
+    text-align: center;
+}
+
+#sponsors_heading {
+    font-size: 30px;
+    font-family: Roboto Condensed;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+#Footer_Logos {
+    display: flex;
+    width: 70vw;
+    justify-content: space-evenly;
+}
+
+#Copyright>p{
+    position: relative;
+    font-style: normal;
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    color: white;
+}
+
+
+/* Animations and Effects */
+
+.misc_link {
+    text-decoration: none;
+    font-size: 35px;
+    font-family: Roboto Condensed;
+    font-weight: 300;
+    border: 2px solid #333333;
+}
+
+a.collection_shop {
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    padding: 5px 30px;
+    font-family: Roboto Condensed;
+}
+a.collection_shop:hover {
+    color: #fff !important;
+    background-color: transparent;
+    transform: skew(0deg);
+}
+a.collection_shop:hover:before {
+    top: 0%;
+    bottom: auto;
+    height: 100%;
+}
+a.collection_shop:before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #fff !important;
+    background: #333333;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+a.animated-specs {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-specs:hover {
+    color: #000 !important;
+    background-color: transparent;
+}
+a.animated-specs:hover:before {
+    top: 0%;
+    bottom: auto;
+    height: 100%;
+}
+a.animated-specs:before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #fff;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.deepshadow {
+    background-color: transparent;
+    text-shadow: 
+      0 -1px 0 #fff, 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 22px 30px rgba(0, 0, 0, 0.8);
+}
+
+
+.retroshadow {
+    text-shadow: 
+      4px 4px 0px #d5d5d5, 
+      7px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.section_title, #page_title {
+    animation: fadeInUp 2s;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-500px;} 
+    20% { margin-left:-500px; }
+    35% { margin-left:500px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:100%;}
+    20% {opacity:1;width:100%;}
+    80% {opacity:1;}
+    100% {opacity:0;width:100%;}
+}
+
+@keyframes slideright {
+    0% { margin-right:-1000px;} 
+    20% { margin-right:-1000px; }
+    35% { margin-right:500px; }
+    100% { margin-right:0px; }
+}
+
+@keyframes fadeInUp {
+  from { 
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    transform: rotate(360deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Media Query */
+
+@media all and (max-width: 1417px) {
+    section#Gibson {
+        min-height: 1283.840px;
+    }
+    section#Fender {
+        min-height: 1188px;
+    }
+    section#PRS {
+        min-height: 1199px;
+    }
+    section#Ibanez {
+        min-height: 1141px;
+    }
+}
+
+@media all and (max-width: 935px) {
+    section#Gibson {
+        height: 170vh;
+        min-height: 1617px;
+    }
+    section#Fender {
+        height: 160vh;
+        min-height: 1522px;
+    }
+    section#PRS {
+        height: 161vh;
+        min-height: 1532px;
+    }
+    section#Ibanez {
+        height: 155vh;
+        min-height: 1475px;
+    }
+
+    #gibsonButton, #fenderButton, #PRSButton, #ibanezButton {
+        margin: 19px;
+    }
+}
+
+@media all and (max-width: 869px) {
+    header {
+        background-position: center;
+    }
+    nav a {
+        padding: 8px 15px;
+    }
+
+    .Retailer {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media all and (max-width: 769px) {
+    nav a{
+        background-color: black;
+        border: 0px transparent;
+    }
+
+    nav a:hover {
+        background-color: black;
+        border: 0px transparent;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+
+    nav.black ul {
+        background: #000;
+    }
+
+    .showing {
+        max-height: 20em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #return_to_top {
+        display: none !important;
+    }
+
+    #gibsonButton, #fenderButton, #PRSButton, #ibanezButton {
+        margin: 5px;
+    }
+}
+
+@media all and (max-width: 676px) {
+
+    #Page_Title>h1 {
+        font-size: 5.5em !important;
+    }
+
+    section#Gibson {
+        height: 255vh;
+        min-height: 2425px;
+    }
+    section#Fender {
+        height: 245vh;
+        min-height: 2329px;
+    }
+    section#PRS {
+        height: 252vh;
+        min-height: 2386px;
+    }
+    section#Ibanez {
+        height: 240vh;
+        min-height: 2283px;
+    }
+
+    .Retailer {
+        width: 
+    }
+
+    section#Footer {
+        height: 50vh;
+        min-height: 473px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #Footer_Logos {
+        display: flex;
+        width: 90vw;
+        height: 190px;
+        text-align: center;
+        justify-content: space-around;
+        flex-flow: column wrap;
+    }
+}
+
+@media all and (max-width: 548px) {
+    #Retailers {
+        min-height: 600px;
+        flex-flow: column wrap;
+    }
+}
+
+@media all and (max-width: 520px) {
+    section#Gibson, section#Fender, section#PRS, section#Ibanez {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+@media all and (max-width: 474px) {
+    #Page_Title>h1 {
+        font-size: 4.5em !important;
+    }
+}
+
+@media all and (max-width: 462px) {
+    #Page_Title {
+        text-align: center;
+        width: 100%;
+        position: relative;
+        top: 80px;
+    }
+    #buttonWrapper {
+        flex-flow: column wrap;
+    }
+}
+
+@media all and (max-device-width: 415px) {
+    header {
+        min-height: 100vh !important;
+    }
+}
+
+@media all and (max-width: 412px) {
+    .Main_Logo>img {
+        width: 75vw !important; 
+    }
+
+    #Retailers_Title {
+        width: auto;
+    }
+}
+
+@media all and (max-width: 375px) {
+    #Page_Title h1 { 
+        font-size: 3.5em !important;
+    }
+}
+
+@media all and (max-width: 360px) {
+    footer {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 350px) {
+
+    #Page_Title {
+        width: 90%;
+    }
+
+    section#Gibson, section#Fender, section#PRS, section#Ibanez {
+        width: 38%;
+    }
+
+    h3 {
+        font-size: 45px !important;
+    }
+
+    section#Retailers {
+        width: 38%;
+    }
+}
+
+@media all and (max-width: 335px) {
+    section#Gibson, section#Fender, section#PRS, section#Ibanez {
+        width: 33.6%
+    }
+}
+
+@media all and (max-width: 325px) {
+    html, body {
+        overflow-x:hidden;
+    }
+
+    #Page_Title {
+        width: 87%;
+    }
+
+    section#main {
+        width: 34.2%;
+    }
+    footer {
+        width: 91.5%;
+    }
+
+    section#Gibson, section#Fender, section#PRS, section#Ibanez {
+        width: 34.3%
+    }
+
+    section#Retailers {
+        width: 34.3%;
+    }
+
+    #Title {
+        position: relative;
+        right: 5%;
+    }
+
+    #buttonWrapper {
+        flex-flow: column wrap;
+        position: relative;
+        top: -40px;
+    }
+}
+
+@media screen and (max-device-width: 1024px) and (orientation:landscape) {
+    header{
+        min-height: 100vh;
+    }
+}
+
+@media screen and (max-device-width: 823px) and (orientation:landscape) {
+    #Title {
+        position: relative;
+        text-align: center;
+        align-self: center;
+        top: -35px;
+    }
+}
+
+@media screen and (max-device-width: 570px) and (orientation:landscape) {
+    #buttonWrapper {
+        position: relative;
+        top: -20px;
+    }
+}
