@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid Main Page</title>
+	<link rel="stylesheet" type="text/css" href="CSS/GridRESET.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Grid.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="page">
+        <!             Header Start                >
+		<header id="header" class="headingBG">
+			<nav>
+			  <div class="menu-icon">
+					<i class="fa fa-bars fa-2x"></i>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#header">HOME</a></li>
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="../Front%20End/Showcase.html#">SHOWCASE</a></li>
+						<li><a href="#services">SERVICES</a></li>
+						<li><a href="#contact_us">CONTACT US</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<section id="title">
+				<div id="page_title">
+					<h1 class="deepshadow">STAY AWHILE AND LISTEN</h1>
+					<h2 id="under_title" class="deepshadow">Sponsored by Worldwide Brands</h2>
+				</div>
+				<div id="page_learn_more_button">
+					<a class="learn" href="#about">LEARN MORE</a>
+				</div>
+			</section>
+		</header>
+		<div id="content">
+            <!        Sectiune About        >
+			<section id="about">
+				<div class="section_title" style="margin-top: 60px;">
+					<h3 class="retroshadow">About the Site</h3>
+				</div>
+				<div id="about_info" style="margin-top: 60px;">
+					<h4>This page was created with the sole purpose of showcasing pieces of hardware created using high-end craftsmanship,techniques and materials to suit your needs while providing affordable prices</h4>
+				</div>
+				       <section id="first_row">
+				<div class="designs">
+					<div class="icons"><i class="fas fa-paint-brush"></i></div>
+					<h6>DESIGNS</h6>
+					<p class="info_box">Featuring uniquely designed guitars with sleek forms and eye-catching colours</p>
+				</div>
+				<div class="brands">
+					<div class="icons"><i class="fas fa-shield-alt"></i></div>
+					<h6>BRANDS</h6>
+					<p class="info_box">Guitars provided by the most revolutionary and well-known brands across the world</p>
+				</div>
+				<div class="customs">
+					<div class="icons"><i class="fas fa-cog"></i></div>
+					<h6>CUSTOMS</h6>
+					<p class="info_box">We boast high quality custom works that are going to astonish you</p>
+				</div>
+				       </section>
+			</section>
+
+            <!        Sectiune Featured       >
+
+			<section id="featured">
+				<div class="section_title">
+					<h3 class="retroshadow">Featured Guitars</h3>
+				</div>
+				<div id="featured_brands">
+					<button id="allButton" class="brand_text">All</button>
+					<button id="gibsonButton" class="brand_text">Gibson</button>
+					<button id="fenderButton" class="brand_text">Fender</button>
+					<button id="ibanezButton" class="brand_text">Ibanez</button>
+					<button id="PRSButton" class="brand_text">PRS</button>
+				</div>
+				<section id="products">
+					<div id="gibson_products" onclick="openModal();currentSlide(1)" class="guitarProduct"></div>
+					<div id="fender_products" onclick="openModal();currentSlide(2)" class="guitarProduct"></div>
+					<div id="ibanez_products" onclick="openModal();currentSlide(3)" class="guitarProduct"></div>
+					<div id="PRS_products" onclick="openModal();currentSlide(4)" class="guitarProduct"></div>
+					<div id="gibson_products2" onclick="openModal();currentSlide(5)" class="guitarProduct"></div>
+					<div id="PRS_products2" onclick="openModal();currentSlide(6)" class="guitarProduct"></div>
+                    <!          Modal           >
+					<div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                      <div class="mySlides">
+                        <img src="../Front End/img/EnlargedGibson1.png" id="re-sizing">
+                        <div class="caption-container">
+                        	<h4 id="caption">Memphis 2016 ES-335 Studio</h4>
+                        	<div id="buttonWrapperModal">
+                        		<a href="../Front%20End/Gibson%20Collection.html" id="modalButtonCollection" class="animated-specs">View Collection</a>
+                        		<a href="../Front%20End/Gibson%20ES-335%20Studio.html" id="modalButtonSpecs" class="animated-specs">View Specs</a>
+                        	</div>
+                      	</div>
+                      </div>
+                      <div class="mySlides">
+                        <img src="../Front End/img/EnlargedFender.png" id="re-sizing">
+                        <div class="caption-container">
+                        	<h4 id="caption">Stevie Ray Vaughan</h4>
+                        	<div id="buttonWrapperModal">
+                        		<a href="../Front%20End/Fender%20Collection.html" id="modalButtonCollection" class="animated-specs">View Collection</a>
+                        		<a href="../Front%20End/Fender%20Stratocaster%20SRV.html" id="modalButtonSpecs" class="animated-specs">View Specs</a>
+                        	</div>
+                      	</div>
+                      </div>
+                      <div class="mySlides">
+                        <img src="../Front End/img/EnlargedIbanez.png" id="re-sizing">
+                        <div class="caption-container">
+                        	<h4 id="caption">Strat SA 160 QM</h4>
+                        	<div id="buttonWrapperModal">
+                        		<a href="../Front%20End/Ibanez%20Collection.html" id="modalButtonCollection" class="animated-specs">View Collection</a>
+                        		<a href="../Front%20End/Ibanez%20SA%20160%20QM.html" id="modalButtonSpecs" class="animated-specs">View Specs</a>
+                        	</div>
+                      	</div>
+                      </div>
+                      <div class="mySlides">
+                        <img src="../Front End/img/EnlargedPRS1.png" id="re-sizing">
+                        <div class="caption-container">
+                        	<h4 id="caption">Custom 22 Piezo</h4>
+                        	<div id="buttonWrapperModal">
+                        		<a href="../Front%20End/PRS%20Collection.html" id="modalButtonCollection" class="animated-specs">View Collection</a>
+                        		<a href="../Front%20End/PRS%20CUSTOM%2022%20PIEZO.html" id="modalButtonSpecs" class="animated-specs">View Specs</a>
+                        	</div>
+                      	</div>
+                      </div>
+                      <div class="mySlides">
+                        <img src="../Front End/img/EnlargedGibson2.png" id="re-sizing">
+                        <div class="caption-container">
+                        	<h4 id="caption">1961 ES-330TD VOS</h4>
+                        	<div id="buttonWrapperModal">
+                        		<a href="../Front%20End/Gibson%20Collection.html" id="modalButtonCollection" class="animated-specs">View Collection</a>
+                        		<a href="../Front%20End/Gibson%20ES%20VOS.html" id="modalButtonSpecs" class="animated-specs">View Specs</a>
+                        	</div>
+                      	</div>
+                      </div>
+                      <div class="mySlides">
+                        <img src="../Front End/img/EnlargedPRS2.png" id="re-sizing">
+                        <div class="caption-container">
+                        	<h4 id="caption">509 Core Electric</h4>
+                        	<div id="buttonWrapperModal">
+                        		<a href="../Front%20End/PRS%20Collection.html" id="modalButtonCollection" class="animated-specs">View Collection</a>
+                        		<a href="../Front%20End/PRS%20509%20CE.html" id="modalButtonSpecs" class="animated-specs">View Specs</a>
+                        	</div>
+                      	</div>
+                      </div>
+    
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                      <div class="column">
+                        <img class="demo cursor" src="../Front End/img/ExpoGibson1.png" style="width:100%" onclick="currentSlide(1)" alt="Memphis 2016 ES-335 Studio">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="../Front End/img/ExpoFender.png" style="width:100%" onclick="currentSlide(2)" alt="Stevie Ray Vaughan">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="../Front End/img/ExpoIbanez.png" style="width:100%" onclick="currentSlide(3)" alt="Strat SA 160 QM">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="../Front End/img/ExpoPRS1.png" style="width:100%" onclick="currentSlide(4)" alt="Custom 22 Piezo">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="../Front End/img/ExpoGibson2.png" style="width:100%" onclick="currentSlide(5)" alt="1961 ES-330TD VOS">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="../Front End/img/ExpoPRS3.png" style="width:100%" onclick="currentSlide(6)" alt="509 Core Electric">
+                      </div>
+                    </div>
+                  </div>
+				</section>
+			</section>
+			
+            <!        Sectiune Sponsors        >
+
+			<section id="sponsors">
+				<div class="section_title">
+					<h3 class="retroshadow">Our Sponsors</h3>
+				</div>
+				     <section id="sponsors_row">
+				<div id="gibson">
+					<div class="overlay">
+						<a href="../Front%20End/Gibson%20Collection.html" class="Page_Logo" title="Gibson Page"> <img src="../Front End/img/Logotest.png" style="width: 160%"></a>
+						<a class="animated-specs" href="../Front%20End/Gibson%20Collection.html">Collection</a>
+					</div>
+				</div>
+				<div id="fender">
+					<div class="overlay">
+						<a href="../Front%20End/Fender%20Collection.html" class="Page_Logo" title="Fender Page"> <img src="../Front End/img/FenderSponsorLogo.png" style="width: 160%"></a>
+						<a class="animated-specs" href="../Front%20End/Fender%20Collection.html">Collection</a>
+					</div>
+				</div>
+				<div id="ibanez">
+					<div class="overlay">
+						<a href="../Front%20End/Ibanez%20Collection.html" class="Page_Logo" title="Ibanez Page"> <img src="../Front End/img/IbanezSponsorLogo.png" style="width: 160%"></a>
+						<a class="animated-specs" href="../Front%20End/Ibanez%20Collection.html">Collection</a>
+					</div>
+				</div>
+				<div id="PRS">
+					<div class="overlay">
+						<a href="../Front%20End/PRS%20Collection.html" class="Page_Logo" title="PRS Page"> <img src="../Front End/img/PRSSponsorLogo.png" style="width: 160%"></a>
+						<a class="animated-specs" href="../Front%20End/PRS%20Collection.html">Collection</a>
+					</div>
+				</div>
+				     </section>
+
+			</section>
+
+            <!        Sectiune Services        >   
+  
+			<section id="services">
+
+				<div class="section_title">
+					<h3 class="retroshadow">Services</h3>
+				</div>
+
+
+				     <section id="second_row">
+
+				<div class="contact">
+					<div class="icons"><i class="fas fa-comments"></i></div>
+					<h6>CONTACT</h6>
+					<p class="info_box">Got a question about our gear or simply want to write us a message? Don’t hesitate</p>
+				</div>
+				<div class="brands">
+					<div class="icons"><i class="fas fa-shield-alt"></i></div>
+					<h6>BRANDS</h6>
+					<p class="info_box">Guitars provided by the most revolutionary and well-known brands across the world</p>
+				</div>
+				<div class="customs">
+					<div class="icons"><i class="fas fa-cog"></i></div>
+					<h6>CUSTOMS</h6>
+					<p class="info_box">We boast high quality custom works that are going to astonish you</p>
+				</div>
+				<div class="subscriptions">
+					<div class="icons"><i class="fas fa-envelope"></i></div>
+					<h6>SUBSCRIPTIONS</h6>
+					<p class="info_box">If you wish to hear more from us, then feel free to subscribe to our newsletter</p>
+				</div>
+				<div class="sales">
+					<div class="icons"><i class="fas fa-tag"></i></div>
+					<h6>SHOWCASE</h6>
+					<p class="info_box">A display of some of the finest guitars made by our sponsors</p>
+				</div>
+				<div class="shop">
+					<div class="icons"><i class="fas fa-cart-arrow-down"></i></div>
+					<h6>SHOP</h6>
+					<p class="info_box">Browse our showcase for either specifications or a link to the sponsor's page</p>
+				</div>
+
+				    </section>
+
+			</section>
+
+            <!        Sectiune Newsletter        >
+
+			<section id="newsletter">
+
+				<div id="newsletter_title">
+					<h5>Subscribe to our newsletter to get the latest news</h5>
+				</div>
+				<div id="email_box">
+					<input type="text" placeholder="Enter Your Email">
+				</div>
+				<div class="submit_button">
+					<input type="button" name="Submit" value="SUBMIT">
+				</div>
+
+			</section>
+
+            <!        Sectiune Contact        >
+
+			<section id="contact_us">
+				<div class="section_title">
+					<h3 class="retroshadow">Get in Touch</h3>
+				</div>
+				<section id="contact_form">
+					<div id="name_form"><input class="form_style" type="form" name="Name" placeholder="Name"></div>
+					<div id="email_form"><input class="form_style" type="form" name="Email" placeholder="Email"></div>
+					<div id="subject_form"><input class="form_style" type="form" name="Subject" placeholder="Subject"></div>
+					<div id="message_form"><textarea class="form_style2" type="form" name="Message" placeholder="Message..." rows="7"></textarea></div>
+				</section>
+				<div class="submit_button2"><input type="button" name="Submit Now" value="Submit Now"></div>
+			</section>
+
+        <! Return Button >
+		<a href="#" id="return_to_top"><i class="fas fa-chevron-up"></i></a>
+
+        <!        Footer Start         >
+
+		<footer>
+		    	<section id="Footer">
+		    		<div id="Sponsors_Text">
+		    			<h1 id="sponsors_heading">Sponsors:</h1>
+		    		</div>
+		    		<div id="Footer_Logos">
+		    			<div id="gibson_logo"><img src="../Front End/img/GibsonFooterLogo.png"></div>
+                        <div id="fender_logo"><img src="../Front End/img/FenderFooterLogo.png"></div>
+                        <div id="PRS_logo"><img src="../Front End/img/PRSFooterLogo.png"></div>
+                        <div id="ibanez_logo"><img src="../Front End/img/IbanezFooterLogo.png"></div>
+		    		</div>
+		    		<div id="Copyright">
+		    			<p>©Copyright |  D.C.A. Project One 2018.All Rights Reserved</p>
+		    		</div>
+		    	</section>
+		</footer>
+	</div>
+
+	<! JS / JQuerry >
+	<script type="text/javascript">
+		setInterval(function() {
+			setTimeout(function () {
+				$('.headingBG').toggleClass('headingSlide');
+			}, 3000);
+		}, 6000);
+
+		$('a[href^="#about"], a[href^="#services"], a[href^="#header"], a[href^="#sponsors"], a[href^="#featured"], a[href^="#contact_us"]').on('click', function(event) {
+            var target = $(this.getAttribute('href'));
+            if( target.length ) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        });
+
+		// Script to be used for the "hamburger" on either small desktops,small viewports, tablets and mobile devices. 
+    	$(document).ready(function(){ 
+    		$(".menu-icon").on("click", function() { 
+    			$("nav ul").toggleClass("showing");
+    		});
+    	});
+
+        // This script is for the sticky navigation bar.
+    	$(window).on("scroll", function() { 
+    		if ($(window).scrollTop()) {
+    			$('nav').addClass('black'); 
+    		}
+    		else {
+    			$('nav').removeClass('black'); 
+    		}
+    	});
+
+        //Scroll back to top button script
+    	$(window).scroll(function() { 
+            if ($(this).scrollTop() >= 50) { 
+                $('#return_to_top').fadeIn(200);
+            } 
+            else {
+                $('#return_to_top').fadeOut(200);
+            }
+        });
+
+        $('#return_to_top').click(function() { // Adds an event listener on click on the "return to top" button.
+            $('body,html').animate({ // Adds the animation function
+                scrollTop : 0 // Sets the "starting point", with 0 being the start of the page, adjust accordingly.
+            },  1200); // Sets the scrolling speed, increase to make it slower, decrease to make it go faster.
+        });
+
+        // Lightbox script
+        function openModal() {
+          document.getElementById('myModal').style.display = "flex";
+        }
+
+        function closeModal() {
+          document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        };
+
+        // Scripts to display only the selected brand and hide the rest while also highlighting the current selected option.
+        // This first script is used to create an "active" state to produce feedback for the user and let them know which option is currently selected.
+        $(".brand_text").click(function (e) { // Gets all the buttons which share the specified class and it adds an event listener on click with one parameter.
+        	e.preventDefault(); // Disables the default action.
+            $('#featured_brands button.brand_text_active').removeClass('brand_text_active'); // Removes the active class from the current button if we're clicking on another one.
+            $(this).addClass('brand_text_active'); // Adds the class that we're using for the button style changes representing the active state.
+        });
+
+        // First one is to make all the brands visible.
+        $("#allButton").click(function() { // Adds an event listener on click.
+        	$("#fender_products, #ibanez_products, #PRS_products, #PRS_products2, #gibson_products, #gibson_products2").fadeIn();
+        });
+        
+        // Hides the rest of the brands while also making itself visible if it has been hidden away previously by any of the other buttons.
+        $("#gibsonButton").click(function () { // Adds an event listener on click.
+        	$("#fender_products, #ibanez_products, #PRS_products, #PRS_products2").fadeOut(); // Fade out effect when being hidden.
+        	$("#gibson_products, #gibson_products2").fadeIn(); // Shows the specific brand with a fade in effect in case it was hidden previously, this helps to achieve a sort of "shuffle" effect in case you want to juggle between different brands instead of using the "All Button".
+        });
+        
+        // Hides the rest of the brands while also making itself visible if it has been hidden away previously by any of the other buttons.
+        $("#fenderButton").click(function () { // Adds an event listener on click.
+        	$("#gibson_products, #gibson_products2, #ibanez_products, #PRS_products, #PRS_products2").fadeOut(); // Fade out effect when being hidden.
+        	$("#fender_products").fadeIn(); // Shows the specific brand with a fade in effect in case it was hidden previously, this helps to achieve a sort of "shuffle" effect in case you want to juggle between different brands instead of using the "All Button".
+        });
+        
+        // Hides the rest of the brands while also making itself visible if it has been hidden away previously by any of the other buttons.
+        $("#ibanezButton").click(function () { // Adds an event listener on click.
+        	$("#gibson_products, #gibson_products2, #fender_products, #PRS_products, #PRS_products2").fadeOut(); // Fade out effect when being hidden.
+        	$("#ibanez_products").fadeIn(); // Shows the specific brand with a fade in effect in case it was hidden previously, this helps to achieve a sort of "shuffle" effect in case you want to juggle between different brands instead of using the "All Button".
+        });
+        
+        // Hides the rest of the brands while also making itself visible if it has been hidden away previously by any of the other buttons.
+        $("#PRSButton").click(function () { // Adds an event listener on click.
+        	$("#gibson_products, #gibson_products2, #fender_products, #ibanez_products").fadeOut(); // Fade out effect when being hidden.
+        	$("#PRS_products, #PRS_products2").fadeIn(); // Shows the specific brand with a fade in effect in case it was hidden previously, this helps to achieve a sort of "shuffle" effect in case you want to juggle between different brands instead of using the "All Button".
+        });
+
+        $(window).scroll(function(){
+    		var wScroll = $(this).scrollTop();
+    		if (wScroll > $('#products').offset().top - ($(window).height() / 1.1)) {
+    			$('#products div').each(function(i) {
+    				setTimeout(function() {
+    					$('#products div').eq(i).addClass('visible');
+    				}, 250 * (i+1));
+    			});
+    		}
+    		if (wScroll > $('#first_row').offset().top - ($(window).height() / 1.1)) {
+    			$('#first_row div').each(function(i) {
+    				setTimeout(function() {
+    					$('#first_row div').eq(i).addClass('visible');
+    				}, 250 * (i+1));
+    			});
+    		}
+    		if (wScroll > $('#sponsors_row').offset().top - ($(window).height() / 1.1)) {
+    			$('#sponsors_row #gibson, #sponsors_row #fender, #sponsors_row #ibanez, #sponsors_row #PRS').each(function(i) {
+    				setTimeout(function() {
+    					$('#sponsors_row #gibson, #sponsors_row #fender, #sponsors_row #ibanez, #sponsors_row #PRS').eq(i).addClass('visible');
+    				}, 400 * (i+1));
+    			});
+    		}
+    		if (wScroll > $('#second_row').offset().top - ($(window).height() / 1.1)) {
+    			$('#second_row div').each(function(i) {
+    				setTimeout(function() {
+    					$('#second_row div').eq(i).addClass('visible');
+    				}, 250 * (i+1));
+    			});
+    		}
+    	});
+    </script>
+</body>
+</html>
