@@ -1,0 +1,1284 @@
+div#pagina {
+	overflow: hidden;
+	max-width: 1903px;
+	width: 100%;
+	min-width: 350px;
+	margin: auto;
+}
+
+header, section#about, section#featured, section#sponsors, section#services, section#newsletter, section#contact_us, section#location_phone_mail, section#footer_information, section#footer_sponsors, section#footer_social_media {
+	padding: 0px 100px;
+}
+
+.icons {
+	position: relative;
+    top: 10%;
+    text-align: center;
+    font-size: 35px;
+    height: 5px;
+}
+
+/** Header Section **/
+
+header {
+	height: 690px;
+	background-image: url("../img/HeaderBackground.png");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+nav ul {
+	list-style: none;
+	background: rgba(0,0,0,0);
+	overflow: hidden;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	transition: 1s;
+}
+
+nav.black ul {
+	background: #000;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+nav a {
+	padding: 8px 55px;
+	transition: ease-in-out 0.3s;
+	border: 1px solid white;
+	background: #333333;
+}
+
+nav a:hover{
+	border-radius: 10px;
+	background-color: #ffffff;
+	border: 1px solid;
+	color: #333333;
+	transition: ease-in-out 0.3s;
+}
+
+.menu-icon {
+	width: 100%;
+	background: #000;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 15px 24px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+}
+
+#title {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 87%;
+	top: 33.8%;
+}
+
+#page_title {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+#under_title {
+	position: relative;
+	top: 35px;
+}
+
+#page_learn_more_button {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 300px;
+}
+
+.learn {
+	background-color: #ffffff;
+	font-size: 1em;
+	font-family: "Open Sans";
+	font-weight: lighter;
+	border-radius: 20px;
+    border: solid 1px transparent;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.learn:hover{
+	background-color: #333333;
+	color: #ffffff;
+	border: 1px solid;
+	border-color: #ffffff;
+	transition: ease-in-out 0.3s;
+}
+
+.learn a {
+	text-decoration: none;
+	font-size: 1em;
+	font-family: Open Sans;
+	font-weight: lighter;
+	color: #333333;
+}
+
+.learn a:hover {
+	color: white;
+}
+
+
+/** About Section **/
+
+
+section#about {
+	height: 552px;
+}
+
+.section_title {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	top: 10%;
+}
+
+#about_info {
+	font-size: 18px;
+	position: relative;
+	text-align: center;
+	line-height: 1.8em;
+	left: 25%;
+	top: 15%;
+}
+
+#first_row {
+	position: relative;
+    width: 25%;
+    display: -webkit-inline-box;
+    top: 110px;
+    left: 12.5%;
+}
+
+
+/** Featured Section **/
+
+
+section#featured {
+	height: 764px;
+	background-color: #ebebeb;
+}
+
+#featured_brands {
+	position: relative;
+	text-align: center;
+	font-size: 20px;
+	font-family: Open Sans;
+	font-weight: lighter;
+	color: #333333;
+	top: 16%;
+}
+
+.brand_text {
+	padding: 10px;
+	margin: 15px;
+	border: 1px solid;
+	transition: ease-in-out 0.2s;
+}
+
+.brand_text:hover {
+	cursor: pointer;
+	background: #333333;
+	color: #ffffff;
+	transition: ease-in-out 0.2s;
+}
+
+section#products {
+	position: relative;
+    top: 25%;
+    text-align: center;
+}
+
+#gibson_products {
+	background: url("../img/GibsonFeatured2.png");
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+#gibson_products2 {
+	background: url("../img/GibsonFeatured.png");
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+#fender_products {
+	background: url("../img/FenderFeatured.png");
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+#ibanez_products {
+	background: url("../img/FenderFeatured2.png");
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+#PRS_products {
+	background: url("../img/MiscGuitarOne.png");
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+#PRS_products2 {
+	background: url("../img/Talman.png");
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+#gibson_products, #fender_products, #ibanez_products, #PRS_products, #gibson_products2, #PRS_products2 {
+	position: relative;
+	display: -webkit-inline-box;
+    margin: 15px;
+    width: 23%;
+    height: 193px;
+    border: 1px solid;
+    border-color: #333333;
+}
+
+
+/** Sponsors Section **/
+
+
+section#sponsors {
+	height: 627px;
+}
+
+#sponsors_row {
+	position: relative;
+    top: 110px;
+    margin: auto;
+    text-align: center;
+}
+
+#gibson, #fender, #ibanez, #PRS {
+	position: relative;
+    display: inline-block;
+    height: 378px;
+    height: 23.64em;
+    /** EM width 
+    width: 18.4em;
+    **/
+    width: 17%;
+    background: #ebebeb;
+    border: 1px solid;
+    border-color: #333333;
+}
+
+#gibson {
+	background: url("../img/GibsonMiscGuitar.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #ebebeb;
+}
+
+#fender {
+	background: url("../img/FenderMiscGuitar.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #ebebeb;
+}
+
+#ibanez {
+	background: url("../img/IbanezRGAIX6U.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #ebebeb;
+}
+
+#PRS {
+	background: url("../img/PRSMiscGuitar.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #ebebeb;
+}
+
+
+/** Service Section **/
+
+
+section#services {
+	height: 669px;
+}
+
+.designs, .brands, .customs, .contact, .subscriptions, .sales, .shop {
+	position: relative;
+    /* margin: auto; */
+    /* left: 12.3%; */
+    margin: 15px;
+    /* display: inline-block; */
+    /* top: 112px; */
+    /* width: 23%; */
+    height: 193px;
+    border: 1px solid;
+    border-color: #333333;
+}
+
+#second_row {
+	position: relative;
+    width: 25%;
+    display: -webkit-inline-box;
+    top: 110px;
+    left: 12.5%;
+}
+
+#third_row {
+	position: relative;
+    width: 25%;
+    display: -webkit-inline-box;
+    top: 337px;
+    right: 12.8%;
+}
+
+.info_box {
+	position: relative;
+	margin: auto;
+	top: 42%;
+}
+
+
+/** Newsletter Section **/
+
+
+section#newsletter {
+	height: 399px;
+	background-color: #ebebeb;
+}
+
+#newsletter_title {
+	position: relative;
+	width: 100%;
+	top: 22%;
+}
+
+#email_box{
+	position: relative;
+	top: 27%;
+}
+
+.submit_button {
+	text-align: center;
+	position: relative;
+	top: 34%;
+}
+
+input[type='button'] {
+	display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-family: Open Sans;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+input[type='button']:hover{
+	transition: ease-in-out 0.3s;
+	background-color: #ebebeb;
+	color: #333333;
+	border-color: #333333;
+}
+
+input[type='text'] {
+	font-family: Roboto Condensed;
+	font-size: 18px;
+    display: block;
+    width: 35%;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    background: none;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/** Contact Section **/
+
+
+section#contact_us {
+	height: 684px;
+}
+
+#contact_form {
+	position: relative;
+    top: 20%;
+    text-align: center;
+    height: 375px;
+}
+
+#name_form {
+	width: 45%;
+	float: left;
+    padding: 20px;
+}
+
+#email_form {
+	width: 45%;
+	float: right;
+    padding: 20px;
+}
+
+#subject_form {
+    padding: 20px;
+}
+
+#message_form {
+	position: relative;
+    padding: 20px;
+    bottom: 20px;
+}
+
+.form_style {
+	font-family: Open Sans;
+	font-size: 16px;
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #ebebeb;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+.form_style2 {
+	font-family: Open Sans;
+	font-size: 16px;
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 175px;
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #ebebeb;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+.submit_button2 {
+	text-align: center;
+	position: relative;
+	top: 27%;
+}
+
+/** Location Section **/
+
+
+section#location_phone_mail {
+	height: 158px;
+	background-color: #ebebeb;
+}
+
+.icon {
+	font-size: 45px;
+}
+
+#location>h3, #phone>h3, #mail>h3 {
+	text-align: center;
+	font-size: 22px;
+}
+
+#location>p, #phone>p, #mail>p {
+	font-size: 18px;
+	font-family: Open Sans;
+}
+
+div#location>.icon{
+	position: relative;
+	top: 60px;
+}
+
+#location>p{
+	position: relative;
+	right: 35%;
+	top: 20px;
+}
+
+#location>h3{
+	position: relative;
+	right: 35%;
+	top: 15px;
+}
+
+/** Footer Section **/
+
+footer {
+	height: 300px;
+	background-color: #2d2929;
+}
+
+#Sponsors_Text {
+	position: relative;
+	text-align: center;
+	top: 50px;
+}
+
+#sponsors_heading {
+	font-size: 30px;
+	font-family: Roboto Condensed;
+	color: #ffffff;
+	letter-spacing: 3px;
+	font-weight: 700;
+}
+
+#Footer_Logos {
+    position: relative;
+    text-align: center;
+    display: inline-flex;
+    left: 26%;
+    top: 50px;
+}
+
+#gibson_logo, #fender_logo, #PRS_logo, #ibanez_logo {
+	padding: 50px;
+}
+
+#Copyright {
+	position: relative;
+	top: 50px;
+}
+
+#Copyright>p{
+	position: relative;
+	font-style: normal;
+	font-family: Roboto Condensed;
+	font-size: 20px;
+	color: white;
+}
+
+#return_to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+}
+#return_to_top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 14px;
+    top: 10px;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+#return_to_top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return_to_top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/** Media Querries **/
+
+
+@media all and (max-width: 1800px) {
+	#Footer_Logos {
+		left: 23%;
+	}
+}
+
+@media all and (max-width: 1670px) {
+	#Footer_Logos {
+		left: 21%;
+	}
+}
+
+@media all and (max-width: 1550px) {
+	#Footer_Logos {
+		left: 19%;
+	}
+}
+
+@media all and (max-width: 1460px) {
+	#Footer_Logos {
+		left: 17%;
+	}
+}
+
+@media all and (max-width: 1397px) {
+	nav a {
+		padding: 8px 45px;
+	}
+}
+
+@media all and (max-width: 1360px) {
+	#Footer_Logos {
+		left: 15%;
+	}
+}
+
+@media all and (max-width:1200px) {
+	header {
+		background-position: center;
+	}
+	#under_title{
+		top: 0%;
+	}
+	#gibson, #fender, #ibanez, #PRS{
+		background-position: center top;
+	}
+	h1 {
+		position: relative;
+		bottom: 70px;
+	}
+	h4 {
+    	font-size: 20px;
+    	position: relative;
+	}
+	h6 {
+		font-size: 16px;
+		letter-spacing: 4px;
+	}
+	.info_box{
+		font-size: 13px;
+	}
+	#first_row, #second_row {
+        position: relative;
+        width: 25%;
+        display: -webkit-inline-box;
+        top: 110px;
+        left: 12.8%;
+	}
+	#third_row {
+		width: 25%;
+		
+		right: 12.6%;
+	}
+	#sponsors_heading {
+		top: 0px;
+	}
+	#Footer_Logos {
+		left: 10%;
+	}
+}
+
+@media all and (max-width: 1150px) {
+	nav a {
+		padding: 8px 40px;
+	}
+}
+
+@media all and (max-width: 1120px) {
+	#Footer_Logos {
+		left: 7%;
+	}
+}
+
+@media all and (max-width: 1065px) {
+	header {
+		background-position: center;
+	}
+	section#about {
+		height: 1080px;
+	}
+	section#about>.section_title{
+		top: 5.5%;
+	}
+	#about_info{
+		font-size: 18px;
+		top: 8.3%;
+	}
+	#first_row{
+		display: block;
+        width: 65%;
+        text-align: center;
+        left: 17.5%;
+	}
+	section#featured {
+		height: 1550px;
+	}
+	section#featured>.section_title{
+		top: 4%;
+	}
+	#gibson_products, #fender_products, #ibanez_products, #PRS_products, #gibson_products2, #PRS_products2{
+		display: block;
+		width: 43%;
+		left: 26%;
+	}
+	section#sponsors {
+		height: 1650px;
+	}
+	section#products {
+		position: relative;
+        top: 11%;
+        text-align: center;
+	}
+	#featured_brands{
+		top: 8%;
+	}
+	section#sponsors>.section_title{
+		top: 3%;
+	}
+	#sponsors_row{
+		left: 32.5%;
+	}
+	#gibson, #fender, #ibanez, #PRS {
+		display: block;
+		width: 33.75%;
+	}
+	section#services {
+		height: 1465px;
+	}
+	section#services>.section_title{
+		top: 5%;
+	}
+	#second_row,#third_row{
+		display: block;
+        width: 65%;
+        text-align: center;
+        top: 7%;
+        left: 17.5%;
+	}
+	h6 {
+		font-size: 17px;
+	}
+	.info_box{
+		font-size: 16px;
+	}
+
+	#name_form, #email_form {
+		width: 42%;
+	}
+}
+
+@media all and (max-width: 1050px) {
+	#Footer_Logos {
+		left: 5%;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	nav a {
+		padding: 8px 30px;
+	}
+	#gibson_logo, #fender_logo, #PRS_logo, #ibanez_logo {
+        padding: 40px;
+    }
+}
+
+@media all and (max-width: 923px) {
+	#Footer_Logos {
+		left: 2%;
+	}
+}
+
+@media all and (max-width: 900px) {
+	nav a {
+		padding: 8px 25px;
+	}
+}
+
+@media all and (max-width: 875px) {
+	#gibson_logo, #fender_logo, #PRS_logo, #ibanez_logo {
+        padding: 30px;
+    }
+    #Copyright {
+        position: relative;
+        top: 75px;
+    }
+}
+
+@media all and (max-width: 850px) {
+	nav a {
+		padding: 8px 20px;
+	}
+}
+
+@media all and (max-width: 849px) {
+	#under_title {
+		top: -55px;
+	}
+}
+
+@media all and (max-width: 797px) {
+	nav a {
+		padding: 8px 15px;
+	}
+	#Footer_Logos {
+		left: 0;
+	}
+}
+
+@media all and (max-width: 784px) {
+	h1 {
+		font-size: 5em;
+	}
+	h2 {
+		font-size: 1.3em;
+	}
+	#gibson, #fender, #ibanez, #PRS {
+        display: block;
+        width: 49.75%;
+        left: -7.5%;
+    }
+}
+
+@media all and (max-width: 780px) {
+	section#about {
+		height: 1140px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	nav a {
+		padding: 8px 8px;
+	}
+	#Footer_Logos {
+		top: 70px;
+		left: 6%;
+	}
+	#gibson_logo, #fender_logo, #PRS_logo, #ibanez_logo {
+        padding: 20px;
+    }
+    #Copyright {
+        position: relative;
+        top: 95px;
+    }
+    #return_to_top {
+    	visibility: hidden;
+    }
+}
+
+@media all and (max-width: 758px) {
+	section#about {
+		height: 1190px;
+	}
+	section#featured {
+		height: 1710px;
+	}
+	#featured_brands {
+		font-size: 18px;
+		display: grid;
+		top: 6%;
+		width: 80%;
+        left: 9.8%;
+	}
+	.brand_text {
+		padding: 5px;
+		margin: 5px;
+	}
+	section#products {
+		position: relative;
+		top: 8%;
+	}
+	section#contact_us {
+		height: 770px;
+	}
+	#gibson_products, #fender_products, #ibanez_products, #PRS_products, #gibson_products2, #PRS_products2 {
+        display: block;
+        width: 67%;
+        left: 13%;
+    }
+
+	#contact_form {
+		position: relative;
+		top: 15%;
+	
+	}
+	#email_form {
+		float: none;
+		width: 92.5%;
+	}
+	#name_form {
+		width: 92.5%;
+	}
+	#subject_form {
+		position: relative;
+		bottom: 20px;
+	}
+	#message_form {
+		position: relative;
+		bottom: 35px;
+	}
+	section#footer_sponsors {
+		position: relative;
+		bottom: 49%;
+	}
+	.submit_button2 {
+		position: relative;
+		top: 34%;
+	}
+}
+
+@media all and (max-width: 710px) {
+	#Footer_Logos {
+		top: 90px;
+		left: 3%;
+	}
+	#gibson_logo, #fender_logo, #PRS_logo, #ibanez_logo {
+        padding: 10px;
+    }
+    #Copyright {
+        position: relative;
+        top: 115px;
+    }
+}
+
+@media all and (max-width: 686px) {
+	nav a{
+		background-color: black;
+		border: 0px transparent;
+	}
+
+	nav a:hover {
+		background-color: black;
+		border: 0px transparent;
+	}
+
+	nav ul {
+		max-height: 0px;
+		background: #000;
+	}
+
+	nav.black ul {
+		background: #000;
+	}
+
+	.showing {
+		max-height: 20em;
+	}
+
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 24px 0;
+		text-align: center;
+	}
+
+	.menu-icon {
+		display: block;
+	}
+}
+
+@media all and (max-width: 668px) {
+    #name_form, #email_form {
+    	width: 90.5%
+    }
+}
+
+@media all and (max-width: 655px) {
+	footer {
+		height: 500px;
+	}
+	#Footer_Logos {
+        top: 90px;
+        left: -1%;
+        display: inline;
+    }
+	#gibson_logo, #fender_logo, #PRS_logo, #ibanez_logo {
+        padding: 5px;
+    }
+    #Copyright {
+        position: relative;
+        top: 125px;
+    }
+}
+
+@media all and (max-width: 612px) {
+	h1 {
+		font-size: 4.3em;
+	}
+	section#about {
+		height: 970px;
+	}
+	h4 {
+		right: 50%;
+		width: 150%;
+		font-size: 17px;
+	}
+	.info_box {
+		font-size: 14px;
+	}
+	#name_form, #email_form {
+		width: 89%;
+	}
+	#first_row, #second_row, #third_row {
+        width: 85%;
+        text-align: center;
+        left: 7.5%;
+	}
+	#right_column {
+        position: relative;
+        top: 50px;
+        display: initial;
+        text-align: center;
+        left: 0px;
+    }
+}
+
+@media all and (max-width: 539px) {
+	section#about {
+		height: 985px;
+	}
+	h4 {
+	    width: 130%;
+        position: relative;
+        right: 41%;
+	}
+	.brand_text {
+		margin: 4px;
+	}
+	#gibson_products, #fender_products, #ibanez_products, #PRS_products, #gibson_products2, #PRS_products2 {
+        display: block;
+        width: 114%;
+        left: -12%;
+    }
+	#gibson, #fender, #ibanez, #PRS {
+        display: block;
+        width: 90.75%;
+        left: -27.5%;
+    }
+    #contact_form {
+    	right: 3%;
+    }
+    #name_form, #email_form {
+    width: 87%;
+    }
+}
+
+@media all and (max-width: 526px) {
+	section#about {
+		height: 985px;
+	}
+}
+
+@media all and (max-width: 578px) {
+
+}
+
+@media all and (max-width: 510px) {
+
+}
+
+@media all and (max-width: 482px) {
+	section#about {
+		height: 1050px;
+	}
+	section#about>h4{
+		width: 50%;
+	}
+	h1 {
+        position: relative;
+        right: 51%;
+        width: 200%;
+    }
+	.menu_icon {
+        display: block;
+        position: fixed;
+        left: 80%;
+    }
+	h4 {
+		position: relative;
+		right: 41%;
+        font-size: 16px;
+    }
+	#name_form, #email_form {
+        width: 89%;
+    }
+    #first_row, #second_row, #third_row {
+        width: 120%;
+        text-align: center;
+        left: -8.5%;
+    }
+    section#contact_us>.section_title {
+    	font-size: 200px;
+    }
+    #contact_form {
+    	position: relative;
+        right: 23%;
+        width: 140%;
+    }
+    #information_title {
+    	left: 51%;
+    }
+}
+
+@media all and (max-width: 452px) {
+	section#about {
+		height: 1050px;
+	}
+	#name_form, #email_form {
+    width: 85%;
+    }
+}
+
+@media all and (max-width: 445px) {
+	section#about {
+		height: 1100px;
+	}
+}
+
+@media all and (max-width: 414px) {
+	#contact_us>.section_title {
+		position: relative;
+		top: 45px;
+	}
+	#contact_form {
+		position: relative;
+		top: 70px;
+	}
+	.submit_button2 {
+		position: relative;
+		top: 220px;
+	}
+}
+
+@media all and (max-width: 433px) {
+	section#sponsors {
+		height: 1690px;
+	}
+}
+
+@media all and (max-width: 407px) {
+	#first_row, #second_row, #third_row {
+        width: 150%;
+        text-align: center;
+        left: -23.5%;
+    }
+    #gibson_products, #fender_products, #ibanez_products, #PRS_products, #gibson_products2, #PRS_products2 {
+        display: block;
+        width: 147%;
+        left: -27%;
+    }
+    #gibson, #fender, #ibanez, #PRS {
+        display: block;
+        width: 140.75%;
+        left: -52%;
+    }
+}
+
+@media all and (max-width: 405px) {
+	section#about {
+		height: 1150px;
+	}
+}
+
+@media all and (max-width: 390px) {
+	section#about {
+		height: 1170px;
+	}
+	#gibson_products, #fender_products, #ibanez_products, #PRS_products, #gibson_products2, #PRS_products2 {
+        display: block;
+        width: 147%;
+        left: -32%;
+    }
+	#newsletter_title {
+		position: relative;
+		top: 15%;
+	}
+	#email_box {
+		position: relative;
+		top: 19%;
+	}
+
+	.submit_button {
+		position: relative;
+		top: 27%;
+	}
+}
+
+@media all and (max-width: 383px) {
+	section#about {
+		height: 1170px;
+	}
+}
+
+@media all and (max-width: 375px) {
+	section#about {
+		height: 1090px;
+	}
+	h1 {
+        position: relative;
+        right: 51%;
+        width: 200%;
+    }
+    h4 {
+    	position: relative;
+        font-size: 16px;
+        width: 200%;
+        right: 75%;
+    }
+    #gibson_products, #fender_products, #ibanez_products, #PRS_products, #gibson_products2, #PRS_products2 {
+        display: block;
+        width: 180%;
+        left: -48%;
+    }
+    #name_form, #email_form {
+        width: 82%;
+    }
+}
+
+@media all and (max-width: 368px) {
+	#first_row, #second_row, #third_row {
+		width: 175%;
+		left: -38%;
+	}
+	#page_learn_more_button {
+		top: 330px;
+	}
+}
+
+@media all and (max-width: 360px) {
+	#Footer_Logos {
+        top: 90px;
+        left: -1%;
+        display: inline;
+    }
+	#gibson_logo, #fender_logo, #PRS_logo, #ibanez_logo {
+        padding: 5px;
+    }
+    #Copyright {
+        position: relative;
+        top: 125px;
+        right: 3%;
+    }
+}
