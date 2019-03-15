@@ -1,0 +1,893 @@
+div#pagina {
+	overflow: hidden;
+	width: 100%;
+	min-width: 350px;
+	margin: auto;
+}
+
+header, section#about, section#featured, section#sponsors, section#services, section#newsletter, section#contact_us, section#location_phone_mail, section#footer_information, section#footer_sponsors, section#footer_social_media {
+	padding: 0px 100px;
+}
+
+.icons {
+	position: relative;
+    top: 10%;
+    text-align: center;
+    font-size: 35px;
+    height: 5px;
+}
+
+.info_box {
+	position: relative;
+	margin: auto;
+	top: 15%;
+}
+
+header {
+	height: 72vh;
+	min-height: 700px;
+	background-image: url("../img/HeaderBackground.png");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+nav ul {
+	list-style: none;
+	background: rgba(0,0,0,0);
+	overflow: hidden;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	transition: 1s;
+}
+
+nav.black ul {
+	background: #000;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+nav a {
+	padding: 8px 25px;
+	transition: ease-in-out 0.3s;
+	border: 1px solid white;
+	background: #333333;
+}
+
+nav a:hover{
+	border-radius: 10px;
+	background-color: #ffffff;
+	border: 1px solid;
+	color: #333333;
+	transition: ease-in-out 0.3s;
+}
+
+.menu-icon {
+	width: 100%;
+	background: #000;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 15px 24px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+}
+
+#title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+#page_title {
+	text-align: center;
+	display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 60px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#under_title {
+	display: flex;
+    justify-content: center;
+    position: relative;
+    top: 35px;
+}
+
+#page_learn_more_button {
+    display: flex;
+    position: relative;
+    top: 64px;
+}
+
+.learn {
+	background-color: #ffffff;
+	font-size: 1em;
+	font-family: "Open Sans";
+	font-weight: lighter;
+	border-radius: 20px;
+    border: solid 1px transparent;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.learn:hover{
+	background-color: #333333;
+	color: #ffffff;
+	border: 1px solid;
+	border-color: #ffffff;
+	transition: ease-in-out 0.3s;
+}
+
+.learn a {
+	text-decoration: none;
+	font-size: 1em;
+	font-family: Open Sans;
+	font-weight: lighter;
+	color: #333333;
+}
+
+.learn a:hover {
+	color: white;
+}
+
+/* About Section */ 
+
+section#about {
+    height: 58vh;
+    min-height: 564px;
+    display: flex;
+    flex-flow: column wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section_title {
+	text-align: center;
+}
+
+#about_info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.8em;
+}
+
+#first_row {
+    text-align: center;
+    display: flex;
+    width: 80vw;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.designs, .brands, .customs, .contact, .subscriptions, .sales, .shop {
+    margin: 15px;
+    height: 20vh;
+    min-height: 200px;
+    width: 20vw;
+    min-width: 200px;
+    display: flex;
+    border: 1px solid;
+    border-color: #333333;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: ease-in-out 0.3s;
+}
+
+/* Featured Section */ 
+
+section#featured {
+    height: 79vh;
+    min-height: 769px;
+    display: flex;
+    flex-flow: column wrap-reverse;
+    justify-content: space-evenly;
+    background-color: #ebebeb;
+    align-items: center;
+}
+
+#featured_brands {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    font-family: Open Sans;
+    font-weight: lighter;
+    color: #333333;
+}
+
+.brand_text {
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid;
+    transition: ease-in-out 0.2s;
+}
+
+.brand_text:hover {
+	cursor: pointer;
+	background: #333333;
+	color: #ffffff;
+	transition: ease-in-out 0.2s;
+}
+
+section#products {
+    position: relative;
+    text-align: center;
+    display: flex;
+    width: 80vw;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#gibson_products {
+	background: url("../img/GibsonFeatured2.png");
+	background-size: cover;
+	background-position: center;
+}
+
+#gibson_products2 {
+	background: url("../img/GibsonFeatured.png");
+	background-size: cover;
+	background-position: center;
+}
+
+#fender_products {
+	background: url("../img/FenderFeatured.png");
+	background-size: cover;
+	background-position: center;
+}
+
+#ibanez_products {
+	background: url("../img/FenderFeatured2.png");
+	background-size: cover;
+	background-position: center;
+}
+
+#PRS_products {
+	background: url("../img/MiscGuitarOne.png");
+	background-size: cover;
+	background-position: center;
+}
+
+#PRS_products2 {
+	background: url("../img/Talman.png");
+	background-size: cover;
+	background-position: center;
+}
+
+#gibson_products, #fender_products, #ibanez_products, #PRS_products, #gibson_products2, #PRS_products2 {
+	margin: 15px;
+    height: 20vh;
+    min-height: 175px;
+    width: 20vw;
+    min-width: 200px;
+    display: flex;
+    border: 1px solid;
+    border-color: #333333;
+}
+
+/* Sponsor Section */
+
+section#sponsors {
+	height: 75vh;
+	min-height: 710px;
+	display: flex;
+    flex-flow: column wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sponsors_row {
+    position: relative;
+    text-align: center;
+    display: flex;
+    width: 64vw;
+    justify-content: space-evenly;
+    height: auto;
+}
+
+#gibson, #fender, #ibanez, #PRS {
+	position: relative;
+    /*height: 23.64em; < ALTERNATE*/
+    height: 49vh;
+    width: 31vh;
+    min-width: 166px;
+    min-height: 475px;
+    background: #ebebeb;
+    border: 1px solid;
+    border-color: #333333;
+}
+
+#gibson {
+	background: url("../img/GibsonMiscGuitar.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #ebebeb;
+}
+
+#fender {
+	background: url("../img/FenderMiscGuitar.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #ebebeb;
+}
+
+#ibanez {
+	background: url("../img/IbanezRGAIX6U.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #ebebeb;
+}
+
+#PRS {
+	background: url("../img/PRSMiscGuitar.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #ebebeb;
+}
+
+/* Service Section */
+
+
+section#services {
+	height: 69vh;
+	min-height: 672px;
+	display: flex;
+    flex-flow: column wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#second_row {
+    text-align: center;
+    display: flex;
+    width: 80vw;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* Newsletter Section */
+
+
+section#newsletter {
+	height: 41vh;
+    min-height: 399px;
+	background-color: #ebebeb;
+	display: flex;
+    flex-flow: column wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#email_box{
+    width: 70vw;
+}
+
+input[type='button'] {
+	display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-family: Open Sans;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+input[type='button']:hover{
+	transition: ease-in-out 0.3s;
+	background-color: #ebebeb;
+	color: #333333;
+	border-color: #333333;
+}
+
+input[type='text'] {
+	font-family: Roboto Condensed;
+	font-size: 18px;
+    display: block;
+    width: 35%;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    background: none;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Contact Section */
+
+section#contact_us {
+	height: 70.4vh;
+    min-height: 685px;
+	display: flex;
+    flex-flow: column wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact_form {
+    display: flex;
+    flex-flow: column wrap;
+    width: 63vw;
+}
+
+/*/#name_form {
+    width: 28vw;
+    align-self: flex-start;
+}
+
+#email_form {
+    width: 28vw;
+    align-self: flex-end;
+}/*/
+
+.form_style {
+	font-family: Open Sans;
+	font-size: 16px;
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #ebebeb;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+.form_style2 {
+	font-family: Open Sans;
+	font-size: 16px;
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 175px;
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #ebebeb;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+.submit_button2 {
+	text-align: center;
+}
+
+/* Footer Section */
+
+footer {
+	background-color: #2d2929;
+}
+
+section#Footer {
+	height: 31vh;
+    min-height: 301px;
+	display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sponsors_heading {
+	font-size: 30px;
+	font-family: Roboto Condensed;
+	color: #ffffff;
+	letter-spacing: 3px;
+	font-weight: 700;
+}
+
+#Footer_Logos {
+	display: flex;
+	width: 70vw;
+	justify-content: space-evenly;
+}
+
+#Copyright>p{
+	position: relative;
+	font-style: normal;
+	font-family: Roboto Condensed;
+	font-size: 20px;
+	color: white;
+}
+
+/* Return to Top Button */
+
+#return_to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+}
+#return_to_top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 14px;
+    top: 10px;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+#return_to_top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return_to_top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/* Some Hovers */ 
+
+.designs:hover p, .designs:hover h6, .designs:hover .icons {
+    color: white;
+}
+
+.designs:hover {
+    border-top-right-radius: 75px;
+    border-top-left-radius: 75px;
+    background-color: #333333;
+}
+
+.brands:hover p, .brands:hover h6, .brands:hover .icons {
+    color: white;
+}
+
+.brands:hover {
+    border-top-right-radius: 75px;
+    border-top-left-radius: 75px;
+    background-color: #333333;
+}
+
+.customs:hover p, .customs:hover h6, .customs:hover .icons {
+    color: white;
+}
+
+.customs:hover {
+    border-top-right-radius: 75px;
+    border-top-left-radius: 75px;
+    background-color: #333333;
+}
+
+.contact:hover p, .contact:hover h6, .contact:hover .icons {
+    color: white;
+}
+
+.contact:hover {
+    border-top-right-radius: 75px;
+    border-top-left-radius: 75px;
+    background-color: #333333;
+}
+
+.subscriptions:hover p, .subscriptions:hover h6, .subscriptions:hover .icons {
+    color: white;
+}
+
+.subscriptions:hover {
+    border-top-right-radius: 75px;
+    border-top-left-radius: 75px;
+    background-color: #333333;
+}
+
+.sales:hover p, .sales:hover h6, .sales:hover .icons {
+    color: white;
+}
+
+.sales:hover {
+    border-top-right-radius: 75px;
+    border-top-left-radius: 75px;
+    background-color: #333333;
+}
+
+.shop:hover p, .shop:hover h6, .shop:hover .icons {
+    color: white;
+}
+
+.shop:hover {
+    border-top-right-radius: 75px;
+    border-top-left-radius: 75px;
+    background-color: #333333;
+}
+
+.Page_Logo{
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: black;
+}
+
+#gibson:hover .overlay,#fender:hover .overlay, #ibanez:hover .overlay, #PRS:hover .overlay {
+    opacity: 0.9;
+}
+
+/* Media Query Section */ 
+
+
+@media all and (max-device-width: 1065px) {
+    header {
+        height: 50vh;
+        min-height: 685px;
+        background-image: url(../img/HeaderBackground.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    section#about {
+        height: 50vh;
+        min-height: 564px;
+    }
+    section#featured {
+        height: 70vh;
+        min-height: 769px;
+    }
+    section#sponsors {
+        height: 65vh;
+        min-height: 710px;
+    }
+    section#services {
+        height: 55vh;
+        min-height: 672px;
+    }
+    section#newsletter {
+        height: 1vh;
+        min-height: 399px;
+    }
+    section#contact_us {
+        height: 0;
+        min-height: 685px;
+    }
+}
+
+@media all and (max-device-width: 736px) {
+    
+}
+
+@media all and (max-width: 869px) {
+    header {
+        background-position: center;
+    }
+	nav a {
+		padding: 8px 15px;
+	}
+	section#about {
+		min-height: 1195px;
+	}
+	#first_row {
+        text-align: center;
+        display: flex;
+        width: 77vw;
+        flex-flow: row wrap;
+        justify-content: center;
+    } 
+	section#featured {
+		min-height: 1075px;
+	}
+	#gibson_products, #fender_products, #ibanez_products, #PRS_products, #gibson_products2, #PRS_products2 {
+        width: 35vw;
+        min-width: 200px;
+    }
+    section#services {
+    	min-height: 890px;
+    }
+    .designs, .brands, .customs, .contact, .subscriptions, .sales, .shop {
+    	width: 35vw;
+        min-width: 200px;
+    }
+    section#sponsors {
+    	height: 128vh;
+    	min-height: 1206px; 
+    }
+    #sponsors_row {
+        position: relative;
+        text-align: center;
+        display: flex;
+        width: 64vw;
+        justify-content: space-evenly;
+        height: auto;
+        flex-flow: row wrap;
+    }
+    #gibson, #fender, #ibanez, #PRS {
+    	width: 25vh;
+    }
+
+@media all and (max-width: 768px) {
+    header {
+        background-position: center;
+    }
+    h1 {
+        font-size: 5.25em;
+    }
+    h2 {
+        font-size: 1.25em;
+    }
+	header {
+		min-height: 790px;
+	}
+	nav a{
+		background-color: black;
+		border: 0px transparent;
+	}
+
+	nav a:hover {
+		background-color: black;
+		border: 0px transparent;
+	}
+
+	nav ul {
+		max-height: 0px;
+		background: #000;
+	}
+
+	nav.black ul {
+		background: #000;
+	}
+
+	.showing {
+		max-height: 20em;
+	}
+
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 24px 0;
+		text-align: center;
+	}
+
+	.menu-icon {
+		display: block;
+	}
+
+	#return_to_top {
+		visibility: hidden;
+	}
+
+	h4 {
+		width: 100%;
+	}
+
+	section#featured {
+		min-height: 1280px;
+	}
+
+	#featured_brands {
+        position: relative;
+        text-align: center;
+        font-size: 20px;
+        font-family: Open Sans;
+        font-weight: lighter;
+        color: #333333;
+        display: flex;
+        flex-flow: column;
+        width: 50vw;
+        min-width: 301.5px;
+        justify-content: center;
+    }
+
+    .brand_text {
+    	display: flex;
+    	margin: 5px;
+    	justify-content: center;
+    }
+
+    #gibson, #fender, #ibanez, #PRS {
+        width: 22vh;
+    }
+}
+
+@media all and (max-width: 659px) {
+    header {
+        background-position: center;
+    }
+
+    .designs, .brands, .customs, .contact, .subscriptions, .sales, .shop {
+        width: 65vw;
+        min-width: 200px;
+    }
+    section#featured {
+        min-height: 1795px;
+    }
+    #gibson_products, #fender_products, #ibanez_products, #PRS_products, #gibson_products2, #PRS_products2 {
+        width: 65vw;
+        min-width: 200px;
+    }
+    section#sponsors {
+        height: 128vh;
+        min-height: 2110px;
+    }
+    #gibson, #fender, #ibanez, #PRS {
+        width: 32vh;
+    }
+    section#services {
+        min-height: 1510px;
+    }
+    #sponsors_row {
+        width: 80vw;
+    }
+
+    section#Footer {
+        height: 50vh;
+        min-height: 473px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #Footer_Logos {
+        display: flex;
+        width: 90vw;
+        height: 190px;
+        text-align: center;
+        justify-content: space-around;
+        flex-flow: column wrap;
+    }
+}
+
+@media all and (max-device-width: 659px){
+    header {
+        background-position: center;
+    }
+    #gibson, #fender, #ibanez, #PRS {
+        width: 72vh;
+    }
+}
